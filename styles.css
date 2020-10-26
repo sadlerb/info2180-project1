@@ -1,79 +1,258 @@
-:root{
-    font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    :root{
+        font-size: 18px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 
-nav{
-    color: #6b7280;   
-}
+    .card-body p{
+        margin: 0;
+    }
 
-nav:hover{
-    color: #5A67D8;
-}
 
-body {
-    margin: 0;
-    font-size: 16px;
-}
 
-header{
-    background-color: white;
-}
+    li a{
+        color: #6b7280;  
+        
 
-h1{
-    font-size: 24px;
-    color: #48BB78;
-}
+    }
 
-h2{
-    font-size: 24px;
-    color : #48bb78;
-}
-.stories img{
-    border-radius: 5px;
-}
+    li a:hover{
+        color: #5A67D8;
+    }
 
-.newsletter{
-    background-color: #48bb78;
-    color: white;
-}
+    body {
+        margin: 0;
+        font-size: 16px;
+    }
 
-.cards{
-    box-shadow: 5px #e2e8f0;
-}
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
-}
+    header{
+        background-color: white;
+    }
 
-.testing{
-    background-color: #4a5568;
-    color: white;
-}
+    header h1{
+        font-size:  18px;
+        grid-column: 1;
+    }
 
-.cta .btn{
-    background-color: #48bb78;
-    border-radius: 5px;
-}
+    header .container{
+        display: grid;
+        grid-column: 1fr,1fr;
+        align-items: flex-end;
+    }
+    footer{
+        background-color: #4a5568;
+        color: white;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 10px;
+    }
+    footer .container p{
+        padding-left: 50px;
+    }
 
-.stories  h2{
-    font-size: 18px;
-    color: #5A67D8;
-}
+    li{
+        float: left;
+        padding: 10px;
+        list-style-type: none;
+    }
 
-.stories a{
-    color: #5A67D8
-}
+    li a{
+        text-decoration: none;
+    }
 
-.learn-about h3{
-    font-size: 21px;
-    color: #48bb78;
-}
 
-.newsletter .btn{
-    background-color: #5a67d8;
-    color: white;
-    border-radius: 5px;
-}
+
+    .stories img{
+        border-radius: 50%;
+        width: 175px;
+        margin: 20px;
+    }
+
+    .newsletter{
+        background-color: #48bb78;
+        color: white;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+
+    .container {
+        margin: 0 auto;
+        max-width: 960px;
+        width: 100%;
+    }
+
+    .testing{
+        background-color: #4a5568;
+        color: white;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 50px
+    }
+    .testing-desciption{
+        grid-column: 1;
+        margin-left: 100px;
+        min-width: 525px;
+    }
+
+    .cta .btn{
+        background-color: #48bb78;
+        border-radius: 5px;
+        padding: 10px;
+        grid-column: 2;
+        margin-left: 100px;
+        text-decoration: none;
+    }
+
+    .stories  h2{
+        font-size: 18px;
+        color: #5A67D8;
+        margin-left: 35px;
+    }
+
+    .stories a{
+        color: #5A67D8
+    }
+
+    .learn-about h2{
+        font-size: 24px;
+        color : #48bb78;
+    }
+    
+    .learn-about h3{
+        font-size: 21px;
+        color: #48bb78;
+    }
+
+    .learn-about .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 20px;
+    }
+
+    .newsletter .btn{
+        background-color: #5a67d8;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .overview-hero{
+        background-color: #e2e8f0;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    nav{
+        grid-column: 2;
+    }
+
+    .overview-hero .container{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .overview-hero-text{
+        order: 2;
+        max-width: 500px;
+        padding-left: 20px;
+    }
+    
+    .overview-hero-image{
+        order: 1;
+        
+        
+    }
+
+    .overview-hero-image img{
+        width: 175px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    .card img{
+        width: 175px;
+        order: 1;
+    } 
+
+    .learn-about .card{
+        display: grid;
+        grid-template-rows: 1fr,1fr;
+        border-style: solid;
+        border-color: #e2e8f0;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px #888888;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+        min-width: 200px;
+        min-height: 400px;
+        
+        
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        order: 2;
+    }
+
+    .testing .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;   
+    }
+
+    .stories .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .stories article{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        
+    }
+
+    .newsletter .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        max-width: 420px;
+    }
+
+    .form-group{
+        padding-right: 10px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+    }
+    .form-group input{
+        padding: 10px;
+    }
+
+    .newsletter .btn{
+        padding: 10px;
+    }
+
+
+    
+
+ 
+
+
+ 
+
+
 
